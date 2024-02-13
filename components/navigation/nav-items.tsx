@@ -16,7 +16,10 @@ const NavItems = () => {
         <div className={`${isOpen ? 'block' : 'hidden'} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
           <div className="text-sm lg:flex-grow flex flex-col lg:flex-row justify-end">
             <ul className="md:flex flex-col lg:flex-row nav-item space-y-4 lg:space-y-0 lg:space-x-6 nav-item">
-              <li></li>
+              <li>Hello</li>
+              <li>Jordan...</li>
+              <li>Hello</li>
+              <li>Austin...</li>
             </ul>
           </div>
         </div>
