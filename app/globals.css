@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Voltaire&display=swap');
-@import url("https://use.typekit.net/aca5mgo.css");
+@import url("https://use.typekit.net/zzi0aqq.css");
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -31,8 +31,10 @@
 }
 
 .nav-item {
-  font-family: 'Akshar', sans-serif;
-  font-size: 1.5em;
+  font-family: "mongoose", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
   text-transform: uppercase;
   color:#A338F4;
   display: flex;
@@ -89,31 +91,32 @@ body {
 }
 
 h1{
-  font-family: "cheap-pine", sans-serif;
-  font-weight:200;
+  font-family: "mongoose", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 2.5em;
+  font-size: 3em;
+  text-transform: uppercase;
 }
 
 h2{
-  font-family: "cheap-pine-sans", sans-serif;
-  font-weight: 400;
+  font-family: "filmotype-ace", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 2em;
   line-height: normal;
 }
 
 h3{
-  font-family: "cheap-pine-sans", sans-serif;
-  font-weight: 400;
+  font-family: "filmotype-ace", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 2em;
   line-height: normal;
 }
 
 h4{
-  font-family: "cheap-pine-sans", sans-serif;
-  font-weight: 400;
+  font-family: "filmotype-ace", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 1.5em;
   line-height: normal;
