@@ -38,3 +38,6 @@ next-env.d.ts
 
 # supabase
 connection.env
+
+# mern
+mern/client/node_modules
