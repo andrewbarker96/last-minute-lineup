@@ -1,42 +1,213 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Voltaire&display=swap');
+@import url("https://use.typekit.net/aca5mgo.css");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@layer base {
+.main {
+  padding-top: 125px;
+  padding-bottom: 50px;
+  padding-right: 5%;
+  padding-left: 5%;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+
+.home {
+  padding-top: 2%;
+  padding-bottom: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    line-height: auto;
+  }
+  .home{
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    line-height: auto;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  top:0;  
+  min-width: 100%;
+  box-shadow: 2px 2px 2px 2px rgba(117, 117, 117, 0.2);
+}
+
+.nav-item {
+  font-family: 'Akshar', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:#A338F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 1rem;
+  margin: 1%;
+}
+
+.nav-item a:hover {
+  color: #cacaca; 
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
   :root {
-    --background: 200 20% 98%;
-    --btn-background: 200 10% 91%;
-    --btn-background-hover: 200 10% 89%;
-    --foreground: 200 50% 3%;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: 200 50% 3%;
-      --btn-background: 200 10% 9%;
-      --btn-background-hover: 200 10% 12%;
-      --foreground: 200 20% 96%;
-    }
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
-@layer base {
-  * {
-    @apply border-foreground/20;
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+  max-width: 100%;
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+  line-height: Auto;
+}
+
+h1{
+  font-family: "cheap-pine", sans-serif;
+  font-weight:200;
+  font-style: normal;
+  font-size: 2.5em;
+}
+
+h2{
+  font-family: "cheap-pine-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  line-height: normal;
+}
+
+h3{
+  font-family: "cheap-pine-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  line-height: normal;
+}
+
+h4{
+  font-family: "cheap-pine-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: normal;
+}
+
+.footer{
+  justify-content: space-around;
+  background-color: #242424;
+  padding: 2%;
+  bottom: 0;
+}
+
+.copyright{
+  background-color: #212121;
+  padding: 2%;
+  min-width: 100%;
+  bottom: 0;
+  font-family: 'Inter',sans-serif;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+.footer-item {
+  font-family: 'Akshar', sans-serif; 
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.footer-item a:hover {
+  color: #73a6f7; 
+}
+
+.form {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.newItemImage{
+  justify-content: center;
+  align-items: center;;
+  min-width:125px;
+  width:stretch;
+  max-width: 300px;
+
+  /* padding-left: 5%;
+  padding-right: 5%; */
+}
+  
+@media (max-width: 600px) {
+  .newItemImage {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
-.animate-in {
-  animation: animateIn 0.3s ease 0.15s both;
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #1b1a1a);
+  margin-top: 2%;
+  margin-bottom:1%;
 }
 
-@keyframes animateIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.menu-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu-item{
+  padding:3%;
+  align-content: center;
+  text-align:justify;
+}
+
+.menu-border{
+  border: 1.5px solid #060606;
+  padding: 2.5%;
+}
+
+.home-container{
+  background-color: #060606;
+  padding-top:5%;
+  margin-bottom: 5%;
 }
