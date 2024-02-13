@@ -32,7 +32,7 @@ const FooterLinkItem: React.FC<{ links: { href: string; text: string }[] }> = ({
         <Grid container spacing={2} className='copyright'>
           <Grid item xs={12} sm={12} md={12}>
             <div>&copy; 2024 <Link href='/'>Last Minute Lineup</Link></div>
-            <div>Developed by KPB Studios</div>
+            <div>Developed by PB&K Studios</div>
           </Grid>
         </Grid>
       </Box>
