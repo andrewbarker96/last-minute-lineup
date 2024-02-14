@@ -15,10 +15,11 @@ interface RootLayoutProps {
 export default function HomeLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <Head>
-        <title>Last Minute Lineup</title>
-        <meta name="description" content="For Adult Rec League Managers & Players!" />      </Head>
-        <main className="home">{children}</main>
+        <Head>
+            <title>Last Minute Lineup</title>
+            <meta name="description" content="For Adult Rec League Managers & Players!" />      
+        </Head>
+        <main className="main">{children}</main>
       <Footer />
     </>
   )

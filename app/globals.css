@@ -5,15 +5,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.main {
-  padding-top: 125px;
-  padding-bottom: 50px;
-  padding-right: 5%;
-  padding-left: 5%;
-  justify-content: center;
-  background-color: #F5F5F5;
-}
-
 .navbar {
   display: flex;
   align-items: center;
@@ -48,6 +39,15 @@
   color: #BA75FF; 
 }
 
+.main {
+  padding-top: 125px;
+  padding-bottom: 50px;
+  padding-right: 5%;
+  padding-left: 5%;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+
 .home {
   padding-top: 2%;
   padding-bottom: 50px;
@@ -79,15 +79,6 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: white;
-  max-width: 100%;
-  font-family: 'Jost', sans-serif;
-  font-size: 1em;
-  line-height: Auto;
 }
 
 h1{
@@ -141,6 +132,47 @@ h4{
   color: #BA75FF; 
 }
 
+label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  margin-top: 2.5%;
+  color:#424242;
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  min-width: 325px;
+  max-width: stretch;
+  padding:10px;
+  border-radius: 5px;
+  color:#424242;
+  background-color: white;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  min-width: 325px;
+  max-width: stretch;
+  padding:10px;
+  margin-top: 1%;
+  margin-bottom:1%;
+  border-radius: 5px;
+}
+
+.main-button {
+  background-color: #BA75FF;
+  color: white;
+  cursor: pointer;
+}
+
+.alt-button {
+  background-color: none;
+  color: #BA75FF;
+  border: #BA75FF 2px solid;
+}
+
 .copyright{
   background-color: #212121;
   padding: 2%;
@@ -150,29 +182,6 @@ h4{
   font-size: 10px;
   text-align: center;
   color: white;
-}
-
-.form {
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
-.newItemImage{
-  justify-content: center;
-  align-items: center;;
-  min-width:125px;
-  width:stretch;
-  max-width: 300px;
-
-  /* padding-left: 5%;
-  padding-right: 5%; */
-}
-  
-@media (max-width: 600px) {
-  .newItemImage {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
 }
 
 hr {
@@ -240,6 +249,7 @@ hr {
     background-color: #0C0015;
     box-shadow: 2px 2px 2px 2px rgba(9, 9, 9, 0.2);
   }
+
   .nav-item {
     color: white;
   }
@@ -258,5 +268,25 @@ hr {
 
   h1, h2, h3, h4, p {
     color: white;
+  }
+
+  label {
+    color:white;
+  }
+  input {
+    color:white;
+    background-color: #272529;
+  }
+
+  .main-button {
+    background-color: #BA75FF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .alt-button {
+    background-color: #272529;
+    color: white;
+    border: none;
   }
 }

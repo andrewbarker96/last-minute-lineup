@@ -17,7 +17,7 @@ const FooterLinkItem: React.FC<{ links: { href: string; text: string }[] }> = ({
   const Footer = () => {
     return (
       <Box>
-        <Grid container spacing={2} className='footer'>
+        <Grid container spacing={1} className='footer'>
           <FooterLinkItem links={[
             { href:'',text:'' },
           ]} />
@@ -29,7 +29,7 @@ const FooterLinkItem: React.FC<{ links: { href: string; text: string }[] }> = ({
             <Link href="https://www.instagram.com"><InstagramIcon /></Link>
           </Grid>
         </Grid>
-        <Grid container spacing={2} className='copyright'>
+        <Grid container spacing={1} className='copyright'>
           <Grid item xs={12} sm={12} md={12}>
             <div>&copy; 2024 <Link href='/'>Last Minute Lineup</Link></div>
             <div>Developed by PB&K Studios</div>
