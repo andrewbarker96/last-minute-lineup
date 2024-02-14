@@ -5,6 +5,7 @@ import Item from '@mui/material/Grid';
 import { LogoMain } from "@/components/navigation/logo";
 import Link from "next/link"
 import HomeSlider from "@/components/home-slider"
+import Login from "@/components/sign-in/login";
 
 
 export default function HomePage() {
