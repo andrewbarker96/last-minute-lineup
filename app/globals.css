@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Voltaire&display=swap');
 @import url("https://use.typekit.net/zzi0aqq.css");
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -22,10 +23,10 @@
 }
 
 .nav-item {
-  font-family: "mongoose", sans-serif;
-  font-weight: 500;
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 2.5em;
+  font-size: 1.75em;
   text-transform: uppercase;
   color:#A338F4;
   display: flex;
@@ -67,8 +68,8 @@
 }
 
 h1{
-  font-family: "mongoose", sans-serif;
-  font-weight: 500;
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 3em;
   text-transform: uppercase;
@@ -121,7 +122,7 @@ form{
   animation: ease-in;
   display: flex;
   flex-direction: column;
-  width:fill;
+  width:stretch;
   justify-content: center;
   gap: .5rem;
 }
@@ -135,12 +136,12 @@ label {
 
 input {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  max-width: fill;
+  font-size: 14px;
+  max-width: stretch;
   min-width: 435px;
   height:45px;
   padding:10px;
-  border-radius: 10px;
+  border-radius: 5px;
   color:#424242;
   background-color: white;
 }
@@ -149,11 +150,19 @@ button {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   min-width: 435px;
-  max-width: fill;
+  max-width: stretch;
   height:45px;
   margin-top: 1%;
   margin-bottom:1%;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+button a:invalid {
+  color: lightgray;
+}
+
+button a:hover {
+  color: #272529; 
 }
 
 .main-button {
@@ -165,7 +174,8 @@ button {
 .alt-button {
   background-color: none;
   color: #BA75FF;
-  border: #BA75FF 2px solid;
+  border: #BA75FF 3px solid;
+  background-color: white;
 }
 
 .copyright{
@@ -231,7 +241,7 @@ hr {
   .home{
     padding-right: 2.5%;
     padding-left: 2.5%;
-    min-height:fill;
+    min-height:stretch;
     justify-content: center;
     align-content: center;
     font-size: 16px;
@@ -251,7 +261,7 @@ hr {
   input {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    min-width: fill;
+    min-width: stretch;
     max-height:30px;
     border-radius: 5px;
   }
@@ -259,7 +269,7 @@ hr {
   button {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    min-width: fill;
+    min-width: stretch;
     max-height:30px;
     border-radius: 5px;
   }
@@ -338,4 +348,5 @@ hr {
     color: white;
     border: none;
   }
+  
 }

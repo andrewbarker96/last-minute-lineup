@@ -16,14 +16,14 @@ export default function HomeSlider() {
             <Item className = 'flex justify-center'>
                     <Link href='/login'>
                         <button className='main-button'>
-                            SignIn
+                            Login
                         </button>
                     </Link>
             </Item>
             <Item className = 'flex justify-center'>
                 <Link href='/signup'>
                     <button className='alt-button'>
-                        Sign Up
+                        Create Account
                     </button>
                 </Link>
             </Item>

@@ -87,31 +87,34 @@ export default function Login({
             action={signIn}
           >
 
-            <label className="text-md" htmlFor="email">
+            <label htmlFor="email">
               Email
             </label>
             <input
+              type='text'
+              id='email'
               name="email"
               placeholder="test@example.com"
               required
             />
 
-            <label className="text-md" htmlFor="password">
+            <label htmlFor="password">
               Password
             </label>
             <input
               type="password"
+              id='password'
               name="password"
               placeholder="••••••••"
               required
             />
 
             <button className="main-button">
-              Sign In
+              Login
             </button>
 
             <button className="alt-button" formAction={signUp}>
-              Sign Up
+              Create Account
             </button>
 
             {searchParams?.message && (
