@@ -55,7 +55,7 @@ export default function Login({
   };
 
   return (
-    <Grid container spacing={2} className="flex justify-center" style={{ paddingLeft: '30%', paddingRight: "30%" }}>
+    <Grid container spacing={2} className="login-container">
       <Grid item xs={12} sm={12} md={12}>
         <Link
           href="/"

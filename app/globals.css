@@ -35,6 +35,11 @@
   margin: 1%;
 }
 
+.logo {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
 .nav-item a:hover {
   color: #BA75FF; 
 }
@@ -46,33 +51,13 @@
   padding-left: 5%;
   justify-content: center;
   background-color: #F5F5F5;
+  height: 100vh;
 }
 
 .home {
-  padding-top: 2%;
-  padding-bottom: 50px;
-  margin-right: 5%;
-  margin-left: 5%;
+  display: flex;
   justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .main {
-    padding-right: 7.5%;
-    padding-left: 7.5%;
-    justify-content: center;
-    align-content: center;
-    font-size: 16px;
-    line-height: auto;
-  }
-  .home{
-    padding-right: 5%;
-    padding-left: 5%;
-    justify-content: center;
-    align-content: center;
-    font-size: 16px;
-    line-height: auto;
-  }
+ 
 }
 
 :root {
@@ -132,6 +117,15 @@ h4{
   color: #BA75FF; 
 }
 
+form{
+  animation: ease-in;
+  display: flex;
+  flex-direction: column;
+  width:fill;
+  justify-content: center;
+  gap: .5rem;
+}
+
 label {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -142,10 +136,11 @@ label {
 input {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  min-width: 325px;
-  max-width: stretch;
+  max-width: fill;
+  min-width: 435px;
+  height:45px;
   padding:10px;
-  border-radius: 5px;
+  border-radius: 10px;
   color:#424242;
   background-color: white;
 }
@@ -153,12 +148,12 @@ input {
 button {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  min-width: 325px;
-  max-width: stretch;
-  padding:10px;
+  min-width: 435px;
+  max-width: fill;
+  height:45px;
   margin-top: 1%;
   margin-bottom:1%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .main-button {
@@ -216,12 +211,66 @@ hr {
   margin-bottom: 5%;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.login-container{
+  padding-left:35%;
+  padding-right:35%;
+  display:flex;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .main {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    line-height: auto;
   }
+
+  .home{
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    min-height:fill;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    line-height: auto;
+  }
+
+  .logo {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  
+  label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+  }
+  
+  input {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    min-width: fill;
+    max-height:30px;
+    border-radius: 5px;
+  }
+  
+  button {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    min-width: fill;
+    max-height:30px;
+    border-radius: 5px;
+  }
+
+  .login-container{
+    padding-left:5%;
+    padding-right:5%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
 
   .logo-light {
     display: block;

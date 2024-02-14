@@ -3,31 +3,33 @@ import { styled } from '@mui/material/styles'
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid';
 import Link from "next/link";
-import LastMinuteLineupLogo from "./navigation/logo";
+import { LogoMain, LogoNav } from "./navigation/logo";
 
 export default function HomeSlider() {
     return (
-        <div>
-            <Grid container spacing={2} className ='home-container flex justify-center'>
-                <Grid item xs={12} sm={12} md={12}>
-                <Item className = 'flex justify-center'>
-                    <Link href="/">
-                        <LastMinuteLineupLogo />
+    <div>
+        <Grid container spacing={2} className ='home'>
+            <Grid item xs={12} sm={12} md={12}>
+            <Item className = 'flex justify-center'>
+                <LogoMain />
+            </Item>
+            <Item className = 'flex justify-center'>
+                    <Link href='/login'>
+                        <button className='main-button'>
+                            SignIn
+                        </button>
                     </Link>
-                </Item>
-                <Item>
-                    <button className='main-button'>
-                        <Link href='/login'>Sign In</Link>
-                    </button>
-                </Item>
-                <Item>
+            </Item>
+            <Item className = 'flex justify-center'>
+                <Link href='/signup'>
                     <button className='alt-button'>
-                        <Link href='/signup'>Sign Up</Link>
+                        Sign Up
                     </button>
-                </Item>
-                </Grid>
-                <br />
+                </Link>
+            </Item>
             </Grid>
-        </div>
+            <br />
+        </Grid>
+    </div>
     )
   }
