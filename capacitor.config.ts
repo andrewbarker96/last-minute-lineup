@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.lastminutelineup.app',
-  appName: 'Last Minute Lineup',
-  webDir: 'public',
+  appId: 'io.ionic.starter',
+  appName: 'lastminutelineup',
+  webDir: 'dist',
   server: {
     androidScheme: 'https'
   }
