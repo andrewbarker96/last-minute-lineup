@@ -41,3 +41,4 @@ connection.env
 
 # mern
 mern/client/node_modules
+.fake
