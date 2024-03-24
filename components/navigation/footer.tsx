@@ -24,15 +24,10 @@ const FooterLinkItem: React.FC<{ links: { href: string; text: string }[] }> = ({
           <FooterLinkItem links={[
             { href:'',text:'' },
           ]} />
-          <Grid item xs={12} sm={6} md={4} className='footer-item'>
+          <Grid item xs={12} sm={12} md={12} className='footer-item'>
+            <div>&copy; 2024 <Link href='/'>Last Minute Lineup</Link></div>
             <Link href="https://www.facebook.com"><FacebookIcon /></Link>
             <Link href="https://www.instagram.com"><InstagramIcon /></Link>
-          </Grid>
-        </Grid>
-        <Grid container spacing={1} className='copyright'>
-          <Grid item xs={12} sm={12} md={12}>
-            <div>&copy; 2024 <Link href='/'>Last Minute Lineup</Link></div>
-            <div>Developed by PB&K Studios</div>
           </Grid>
         </Grid>
       </Box>

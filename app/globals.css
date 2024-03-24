@@ -42,7 +42,7 @@
 }
 
 .nav-item a:hover {
-  color: #BA75FF; 
+  color: #8860A9; 
 }
 
 .main {
@@ -101,7 +101,7 @@ h4{
 
 .footer{
   justify-content: space-around;
-  background-color: #242424;
+  background-color: #10011c;
   padding: 2%;
   bottom: 0;
 }
@@ -111,20 +111,7 @@ h4{
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  color: white;
-}
-
-.footer-item a:hover {
-  color: #BA75FF; 
-}
-
-form{
-  animation: ease-in;
-  display: flex;
-  flex-direction: column;
-  width:stretch;
-  justify-content: center;
-  gap: .5rem;
+  color: #fdfdfd;
 }
 
 label {
@@ -293,7 +280,7 @@ hr {
 
 @media (prefers-color-scheme: dark) {
   .main {
-    background-color: #160D1B;
+    background-color: #160127;
   }
   
   .logo-dark {
@@ -305,20 +292,20 @@ hr {
   }
 
   .navbar {
-    background-color: #0C0015;
-    box-shadow: 2px 2px 2px 2px rgba(9, 9, 9, 0.2);
+    background-color: #10011c;
+    box-shadow: 2px 2px 2px 2px rgba(31, 1, 51, 0.627);
   }
 
   .nav-item {
-    color: white;
+    color: #fefefe;
   }
 
   .nav-item a:hover {
-    color: #BA75FF; 
+    color: #8860A9; 
   }
 
   .footer {
-    background-color: #0C0015;
+    background-color: #10011c;  
   }
 
   .copyright {
@@ -326,26 +313,26 @@ hr {
   }
 
   h1, h2, h3, h4, p {
-    color: white;
+    color: #fefefe;
   }
 
   label {
-    color:white;
+    color: #fefefe;
   }
   input {
-    color:white;
-    background-color: #272529;
+    color: #fefefe;
+    background-color: #24083B;
   }
 
   .main-button {
     background-color: #BA75FF;
-    color: white;
+    color: #fefefe;
     cursor: pointer;
   }
   
   .alt-button {
-    background-color: #272529;
-    color: white;
+    background-color: #24083B;
+    color: #fefefe;
     border: none;
   }
   
