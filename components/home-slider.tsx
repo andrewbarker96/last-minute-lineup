@@ -27,8 +27,19 @@ export default function HomeSlider() {
                     </button>
                 </Link>
             </Item>
+            <br />
+                <Item className = 'flex justify-center'>
+                <Link href='/styleguide'>
+                    <button className='main-button'>
+                            Style Guide
+                    </button>
+                </Link>
+            </Item>
             </Grid>
             <br />
+            <Grid item xs={12} sm={12} md={12}>
+
+            </Grid>
         </Grid>
     </div>
     )
