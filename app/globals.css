@@ -51,6 +51,7 @@
   padding-left: 5%;
   justify-content: center;
   background-color: #F5F5F5;
+  min-height: 100vh;
 }
 
 .home {
