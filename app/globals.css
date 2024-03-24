@@ -11,12 +11,11 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: #fefefe;
   padding-left: 2.5%;
   padding-right: 2.5%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  position: fixed;
   top:0;  
   min-width: 100%;
   box-shadow: 2px 2px 2px 2px rgba(117, 117, 117, 0.2);
@@ -46,13 +45,12 @@
 }
 
 .main {
-  padding-top: 125px;
+  padding-top: 1%;
   padding-bottom: 50px;
   padding-right: 5%;
   padding-left: 5%;
   justify-content: center;
   background-color: #F5F5F5;
-  height: 100vh;
 }
 
 .home {
@@ -71,38 +69,42 @@ h1{
   font-family: "Bayon", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
 }
 
 h2{
-  font-family: "filmotype-ace", sans-serif;
+  font-family: "Bayon", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: normal;
 }
 
 h3{
-  font-family: "filmotype-ace", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2em;
-  line-height: normal;
-}
-
-h4{
-  font-family: "filmotype-ace", sans-serif;
+  font-family: "Bayon", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.5em;
   line-height: normal;
 }
 
+h4{
+  font-family: "Bayon", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25em;
+  line-height: normal;
+}
+
 .footer{
   justify-content: space-around;
-  background-color: #10011c;
+  background-color: #fefefe;
   padding: 2%;
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 100%;
   bottom: 0;
 }
 
@@ -111,7 +113,7 @@ h4{
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  color: #fdfdfd;
+  color:#A338F4;
 }
 
 label {
@@ -213,6 +215,30 @@ hr {
   padding-right:35%;
   display:flex;
   justify-content: center;
+}
+
+.success-message {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.warning-message {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 650px) {
@@ -334,6 +360,24 @@ hr {
     background-color: #24083B;
     color: #fefefe;
     border: none;
+  }
+
+  .success-message-dark {
+    color: #d4edda;
+    background-color: #155724;
+    border-color: #c3e6cb;
+  }
+  
+  .warning-message-dark {
+    color: #fff3cd;
+    background-color: #856404;
+    border-color: #ffeeba;
+  }
+  
+  .error-message-dark {
+    color: #f8d7da;
+    background-color: #721c24;
+    border-color: #f5c6cb;
   }
   
 }
