@@ -334,6 +334,10 @@ hr {
     background-color: #10011c;  
   }
 
+  .footer-item {
+    color: #fefefe;
+  }
+
   .copyright {
     background-color: #000000;
   }
