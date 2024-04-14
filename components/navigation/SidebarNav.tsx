@@ -24,10 +24,10 @@ export default function SidebarNav() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      setOpen(window.innerWidth > 654);
+      setOpen(window.innerWidth > 1000);
       
       const handleResize = () => {
-        setOpen(window.innerWidth > 654);
+        setOpen(window.innerWidth > 1000);
       };
 
       window.addEventListener('resize', handleResize);
@@ -51,10 +51,10 @@ export default function SidebarNav() {
         <ListItemButton href='profile' className='justify-center'>
           <PersonOutlineOutlinedIcon />
         </ListItemButton>
-        <ListItemButton href='#' className='justify-center'>
+        <ListItemButton href='/' className='justify-center'>
           <SettingsOutlinedIcon />
         </ListItemButton>
-        <ListItemButton href='#' className='justify-center'>
+        <ListItemButton href='/' className='justify-center'>
           <NotificationsOutlinedIcon />
         </ListItemButton>
       </List>
@@ -91,7 +91,7 @@ export default function SidebarNav() {
         onClose={toggleDrawer(false)}
         sx={{
           '& .MuiDrawer-paper': { width:drawerWidth, boxSizing:'border-box' },
-          '@media (max-width: 654px)': {
+          '@media (max-width: 500px)': {
             '& .MuiDrawer-paper': { width: '100%', padding:'2%' },
           },
         }}

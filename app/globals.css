@@ -35,6 +35,10 @@
   margin: 1%;
 }
 
+.sidebar {
+  background-color: #868686;
+}
+
 .logo {
   max-width: fit-content;
   max-height: fit-content;
@@ -48,10 +52,10 @@
 .main {
   padding-top: 1%;
   padding-bottom: 50px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
   justify-content: center;
-  background-color: #F5F5F5;
+  background-color: #ffffff;
   min-height: 100vh;
 }
 
@@ -303,7 +307,7 @@ hr {
   }
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
 
   .logo-light {
     display: block;
@@ -312,7 +316,7 @@ hr {
   .logo-dark {
     display: none;
   }
-}
+} */
 
 
 /* @media (prefers-color-scheme: dark) {

@@ -6,15 +6,13 @@ interface MainButtonProps {
 }
 
 const MainButton: React.FC<MainButtonProps> = ({ label }) => (
-    <Grid item xs={12}>
-        <button className='main-button'>{label}</button>
-    </Grid>
+    <button className='main-button' style={{marginLeft:'2%', marginRight:'2%'}}>{label}</button>
+
 ); 
 
 const AltButton: React.FC<MainButtonProps> = ({ label }) => (
-    <Grid item xs={12}>
-        <button className='alt-button'>{label}</button>
-    </Grid>
+    <button className='alt-button' style={{marginLeft:'2%', marginRight:'2%'}}>{label}</button>
+
 ); 
 
 export { MainButton, AltButton }

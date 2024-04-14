@@ -96,6 +96,7 @@ export default function SignUp() {
               type="submit"
               fullWidth
               variant="contained"
+              style={{ backgroundColor: '#A86CEF' }}
               sx={{ mt: 3, mb: 2 }}
             >
               Sign Up

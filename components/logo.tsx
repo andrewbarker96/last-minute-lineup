@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const LogoNav = () => {
   return (
     <div className='logo'>
-      <Link href='/dashboard'><Image src="/LML-Nav.png" className='logo-light' alt="Last Minute Lineup Nav Icon" width={150} height={100} priority /></Link>
+      <Link href='/dashboard'><Image src="/LML-Nav.png" className='logo-light' alt="Last Minute Lineup Icon" width={150} height={100} priority /></Link>
       {/* <Link href='/'><Image src="/logo-dark.png" className='logo-dark' alt="Last Minute Lineup Nav Icon" width={300} height={100} priority /></Link> */}
     </div>
   )
