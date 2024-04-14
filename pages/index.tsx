@@ -2,16 +2,14 @@ import HomeLayout from "@/app/home-layout"
 import React from "react"
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid';
-import { LogoMain } from "@/components/navigation/logo";
+import { LogoMain } from "@/components/logo";
 import Link from "next/link"
-import HomeSlider from "@/components/home-slider"
-import Login from "@/components/sign-in/login";
-
+import SignIn from "@/components/LoginScreen/SignIn";
 
 export default function HomePage() {
   return (
     <HomeLayout> 
-        <HomeSlider />
+        <SignIn />
     </HomeLayout>
   )
 }

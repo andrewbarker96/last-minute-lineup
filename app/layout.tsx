@@ -2,9 +2,8 @@
 
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Metadata } from 'next'
-import { Navbar } from '../components/navigation/top-nav'
-import Footer from '../components/navigation/footer'
+import SidebarNav from '@/components/navigation/SidebarNav'
+import { useMediaQuery } from '@mui/material'
 import './globals.css'
 
 
@@ -15,15 +14,19 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const matches = useMediaQuery('(min-width:654px)');
+
   return (
     <>
       <Head>
         <title>Last Minute Lineup</title>
         <meta name="description" content="For Adult Rec League Managers & Players!" />
       </Head>
-      <Navbar />
-      <main className="main">{children}</main>
-      <Footer />
+      
+      <div className={matches ? 'flex' : ''}>
+        <SidebarNav />
+        <main className="main" style={{width:'100%'}}>{children}</main>
+      </div>
     </>
   )
 }

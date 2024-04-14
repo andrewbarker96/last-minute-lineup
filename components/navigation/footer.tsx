@@ -4,7 +4,20 @@ import { Grid } from '@mui/material';
 import { Box } from '@mui/system';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Typography from '@mui/material/Typography';
 
+function Copyright(props: any) {
+    return (
+      <Typography variant="body" color="text.secondary" align="center" {...props}>
+        {'Copyright © '}
+        <Link color="inherit" href="#">
+          Last Minute Lineup
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+    );
+  }
 
 const FooterLinkItem: React.FC<{ links: { href: string; text: string }[] }> = ({ links }) => (
     <Grid item xs={12} sm={6} md={4} className='footer-item'>
@@ -25,7 +38,9 @@ const FooterLinkItem: React.FC<{ links: { href: string; text: string }[] }> = ({
             { href:'',text:'' },
           ]} />
           <Grid item xs={12} sm={12} md={12} className='footer-item'>
-            <div>&copy; 2024 <Link href='/'>Last Minute Lineup</Link></div>
+            <div>
+                <Copyright />
+            </div>
             <Link href="https://www.facebook.com"><FacebookIcon /></Link>
             <Link href="https://www.instagram.com"><InstagramIcon /></Link>
           </Grid>

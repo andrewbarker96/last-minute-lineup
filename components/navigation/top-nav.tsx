@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { LogoMain, LogoNav } from './logo'
+import { LogoMain, LogoNav } from '../logo'
 import { NavItems } from './nav-items'
 
 

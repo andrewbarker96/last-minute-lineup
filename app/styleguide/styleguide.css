@@ -38,7 +38,6 @@
 .logo {
   max-width: fit-content;
   max-height: fit-content;
-  margin: auto;
 }
 
 .nav-item a:hover {
@@ -55,14 +54,10 @@
   min-height: 100vh;
 }
 
-.desktop-view {
-  display:'flex';
+p{
+    font-family: 'mono', sans-serif; 
+    font-size: .75em;
 }
-
-.mobile-view {
-  display:'flex';
-}
-
 .home {
   display: flex;
   justify-content: center;
@@ -138,7 +133,7 @@ input {
   font-size: 14px;
   max-width: stretch;
   min-width: 435px;
-  height:45px;
+  height:25px;
   padding:10px;
   border-radius: 5px;
   color:#424242;
@@ -314,8 +309,7 @@ hr {
   }
 }
 
-
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .main {
     background-color: #160127;
   }
@@ -395,4 +389,4 @@ hr {
     border-color: #f5c6cb;
   }
   
-} */
+}
