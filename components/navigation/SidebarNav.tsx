@@ -96,7 +96,7 @@ export default function SidebarNav() {
           },
         }}
       >
-        <Button onClick={toggleDrawer(false)} className='justify-start' style={{ paddingLeft: '5%' }}><CloseRoundedIcon /></Button>
+        <Button onClick={toggleDrawer(false)} className='flex justify-start' style={{ paddingLeft: '5%' }}><CloseRoundedIcon /></Button>
         {DrawerList}
         {LogOut}
       </Drawer>
