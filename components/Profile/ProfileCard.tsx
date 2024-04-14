@@ -11,34 +11,30 @@ const ProfilePage = () => {
   };
 
   return (
-    <Grid container spacing={3} justifyContent="center" alignItems="center">
-      <Grid item xs={12} align="center">
-        {/* Profile Picture Skeleton */}
+    <>
+      <div>
         <Avatar
           alt="Profile Picture"
           src="/path/to/profile-picture.jpg"
           sx={{ width: 150, height: 150, marginBottom: 2 }}
         />
-      </Grid>
-      <Grid item xs={12} align="center">
-        {/* Name */}
+      </div>
+      <div>
         <Typography variant="h5" gutterBottom>
           {profileData.name}
         </Typography>
-      </Grid>
-      <Grid item xs={12} align="center">
-        {/* Email */}
+      </div>
+      <div>
         <Typography variant="body1" gutterBottom>
           Email: {profileData.email}
         </Typography>
-      </Grid>
-      <Grid item xs={12} align="center">
-        {/* Phone Number */}
+      </div>
+      <div>
         <Typography variant="body1" gutterBottom>
           Phone: {profileData.phone}
         </Typography>
-      </Grid>
-    </Grid>
+      </div>
+    </>
   );
 };
 
