@@ -2,7 +2,7 @@
 
 ## Overview
 
-This website is a project developed for [course name] under the supervision of [professor name]. It is designed to showcase various features implemented using React with Next.js, along with Material-UI for styling.
+This website is a project developed for SWDV-640. It is designed to showcase various features implemented using React with Next.js, along with Material-UI for styling.
 
 ## Getting Started
 
@@ -28,20 +28,6 @@ To access the main content of the website, please follow these steps:
 ## Navigation
 
 The website features a sidebar navigation menu that allows users to easily navigate between different sections. Simply click on the menu icon to access the sidebar menu.
-
-## Additional Content
-
-### About
-
-- Learn more about the purpose and goals of this website.
-
-### Contact
-
-- Contact information for inquiries or support.
-
-### Help
-
-- FAQs and other helpful resources to assist users in navigating the website.
 
 ## Feedback
 

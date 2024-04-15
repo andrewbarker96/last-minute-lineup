@@ -1,4 +1,4 @@
-import HomeLayout from "@/app/home-layout"
+import HomeLayout from "@/app/LoginLayout"
 import React from "react"
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid';
