@@ -28,9 +28,3 @@ To access the main content of the website, please follow these steps:
 ## Navigation
 
 The website features a sidebar navigation menu that allows users to easily navigate between different sections. Simply click on the menu icon to access the sidebar menu.
-
-## Feedback
-
-Your feedback is valuable! If you have any suggestions or encounter any issues while using the website, please feel free to reach out to [your contact information].
-
-Thank you for visiting!
