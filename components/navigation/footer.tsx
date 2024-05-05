@@ -9,12 +9,7 @@ import Typography from '@mui/material/Typography';
 function Copyright(props: any) {
     return (
       <Typography variant="body" color="text.secondary" align="center" {...props}>
-        {'Copyright © '}
-        <Link color="inherit" href="#">
-          Last Minute Lineup
-        </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
+        {'Copyright © '} {new Date().getFullYear()} <br/><Link color="inherit" href="#">Last Minute Lineup</Link>{' '} 
       </Typography>
     );
   }

@@ -20,7 +20,7 @@ import Footer from './footer';
 export default function SidebarNav() {
   const [open, setOpen] = React.useState(false);
 
-  const drawerWidth = 300;
+  const drawerWidth = 250;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
